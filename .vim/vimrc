@@ -1,0 +1,34 @@
+set nocompatible
+set number
+set clipboard=unnamedplus " Yank and paste with the system clipboard
+set nohlsearch
+
+call plug#begin('~/.vim/plugged')
+Plug 'morhetz/gruvbox'
+Plug 'vim-syntastic/syntastic'
+Plug 'davidhalter/jedi-vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'scrooloose/nerdtree'
+Plug 'martinda/Jenkinsfile-vim-syntax'
+call plug#end()
+
+" Set color
+set background=dark
+set t_Co=256
+let g:gruvbox_contrast_dark = "hard"
+color gruvbox
+
+" Correct vim navigation keys
+map <up> <nop>
+map <down> <nop>
+map <left> <nop>
+map <right> <nop>
+
+map <C-w><up> <nop>
+map <C-w><down> <nop>
+map <C-w><left> <nop>
+map <C-w><right> <nop>
+
+" add yaml stuffs
+au! BufNewFile,BufReadPost *.{yaml,yml} set filetype=yaml foldmethod=indent
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
