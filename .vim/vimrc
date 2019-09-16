@@ -10,6 +10,7 @@ Plug 'davidhalter/jedi-vim'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'scrooloose/nerdtree'
 Plug 'martinda/Jenkinsfile-vim-syntax'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 
 " Set color
