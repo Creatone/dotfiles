@@ -243,10 +243,16 @@ alias kdpvc='kubectl describe pvc'
 alias kdelpvc='kubectl delete pvc'
 
 alias vi=vim
-alias wca="cd $HOME/Repositories/workload-collocation-agent; pipenv shell"
+alias wca="cd $HOME/Repositories/workload-collocation-agent; source env/bin/activate"
+alias gowca="cd $HOME/Repositories/gowca-scheduler"
 alias prm="cd $HOME/Repositories/platform-resource-manager/prm; pipenv shell"
 alias proxy="sudo systemctl start proxy"
 
 function node() {
 	command ssh "pszulik@100.64.176.$@"
 }
+
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
+alias lab="sudo openvpn ~/Documents/Work/igk-pf1-TCP-443-pszulik/igk-pf1-TCP-443-pszulik.ovpn"
+
