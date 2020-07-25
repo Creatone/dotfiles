@@ -152,6 +152,7 @@ alias kdpvc='kubectl describe pvc'
 alias kdelpvc='kubectl delete pvc'
 
 alias vi=vim
+alias vim=nvim
 alias wca="cd $HOME/Repositories/workload-collocation-agent; source env/bin/activate"
 alias gowca="cd $HOME/Repositories/gowca-scheduler"
 alias prm="cd $HOME/Repositories/platform-resource-manager/prm; pipenv shell"
@@ -165,3 +166,4 @@ alias cnode="ssh pawel@100.65.112.11"
 function node() {
 	command ssh "pszulik@100.64.176.$@"
 }
+
