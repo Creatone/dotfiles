@@ -1,7 +1,7 @@
 export ZSH="/home/pszulik/.oh-my-zsh"
 
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-export GOPATH=$HOME/Repositories/go
+export GOPATH="$HOME/go"
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:/usr/local/go/bin:$PATH:$GOPATH/bin"
 
 ZSH_THEME="lambda"
 
