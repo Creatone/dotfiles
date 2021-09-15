@@ -162,6 +162,7 @@ alias runc="cd $HOME/Repositories/runc"
 alias cadvisor="cd $HOME/Repositories/cadvisor"
 alias goland="/opt/GoLand-2019.3.4/bin/goland.sh"
 alias cnode="ssh pawel@100.65.112.11"
+alias prometheus="cd $HOME/Repositories/prometheus"
 
 function node() {
 	command ssh "pszulik@100.64.176.$@"
