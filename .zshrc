@@ -1,4 +1,5 @@
 export ZSH="$HOME/.oh-my-zsh"
+export GIT_EDITOR="nvim"
 
 export GOPATH="$HOME/go"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:/usr/local/go/bin:$PATH:$GOPATH/bin"
