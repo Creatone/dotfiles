@@ -1,4 +1,4 @@
-export ZSH="/home/pszulik/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 export GOPATH="$HOME/go"
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:/usr/local/go/bin:$PATH:$GOPATH/bin"
